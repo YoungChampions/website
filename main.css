@@ -1,0 +1,24 @@
+#navbar {
+  height: 70px;
+  background-color: #F8F8F8;
+  padding-left: 40px;
+  padding-top: 20px;
+}
+
+.linkstyle::before {
+  content: "Home";
+  text-align: center;
+  color: white;
+  position: absolute;
+  display: inline;
+  width: 100%;
+  height: 200px;
+  bottom: 0;
+  left: 0;
+  background-image: 
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+a:hover::before {
+  transform: scaleX(1);
+}
